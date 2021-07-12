@@ -1,0 +1,144 @@
+:root {
+  --VeryDarkBlue: hsl(217, 19%, 35%);
+  --DarkBlue: hsl(214, 17%, 51%);
+  --GrayishBlue: hsl(212, 23%, 69%);
+  --LightBlue: hsl(210, 46%, 95%);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 13px;
+  margin: 0;
+  font-family: "Manrope", sans-serif;
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  background-color: var(--LightBlue);
+}
+
+P {
+  color: var(--DarkBlue);
+}
+
+.container {
+  width: 320px;
+  background-color: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.main-img {
+  width: 320px;
+}
+
+.about-article {
+  padding: 28px;
+}
+
+.text-content h3 {
+  font-size: 1.3em;
+  font-weight: 700;
+  color: var(--VeryDarkBlue);
+}
+
+.text-content p {
+  font-size: 1.024em;
+  margin-bottom: -10px;
+}
+
+.author {
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 28px 28px 38px 28px;
+  background-color: #fff;
+}
+
+.profile {
+  display: flex;
+  gap: 40px;
+}
+
+.profile-pic {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.share-container {
+  width: 36px;
+  height: 38px;
+  background-color: var(--LightBlue);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.share-container img {
+  width: 15px;
+  height: 15px;
+}
+
+.name p {
+  line-height: normal;
+  margin: 3px;
+  position: relative;
+  right: 15px;
+}
+
+.bold-p {
+  font-weight: 700;
+  font-size: 1.05em;
+  color: var(--VeryDarkBlue);
+}
+
+/*  Active state styles */
+.hidden {
+  display: none;
+}
+
+.active-section {
+  display: flex;
+  height: 40px;
+  width: 230px;
+  align-items: center;
+  gap: 15px;
+  padding-top: 10px;
+  position: absolute;
+}
+
+.active-header {
+  font-size: 0.9rem;
+  letter-spacing: 3px;
+  align-self: center;
+  color: var(--GrayishBlue);
+}
+
+.active-section a {
+  align-self: center;
+}
+
+/* Desktop design */
+@media only screen and (min-width: 1000px) {
+  .container {
+    width: 900px;
+    display: flex;
+  }
+  .main-img {
+    width: 400px;
+  }
+  .text-content {
+    padding-bottom: 0;
+  }
+  .text-content h3 {
+    font-size: 1.5rem;
+  }
+  .text-content p {
+    font-size: 1.05rem;
+  }
+}
